@@ -1,0 +1,16 @@
+Hi
+Make: <%= @car.make %>
+<br/>
+Year: <%= @car.model_year %>
+<br/>
+Speed: <%= @car.speed %>Km/h
+
+<form id= "edit_car" action="/cars/edit">
+  <label for="make">Make: </label>
+  <input type="text" name="make" id ="make" value="<%= @car.make %>" />
+  <label for "model_year">Year: </label>
+  <input type="text" name="model_year" id="model_year" value="<%= @car.model_year %>" />
+  <label for "speed">Speed: </label>
+  <input type="text" name="speed" id="speed" value="<%= @car.speed %>" />
+  <input type="submit" value= "Accelerate"/>
+</form>
